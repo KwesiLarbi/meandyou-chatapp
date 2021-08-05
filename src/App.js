@@ -5,13 +5,18 @@ import './index.css';
 import Chats from './components/Chats';
 import Login from './components/Login';
 
+import { AuthProvider } from './contexts/AuthContext';
+
 export default function App() {
 	return (
 	<div sx={{ fontFamily: 'Avenir' }}>
 		<Router>
-			<Switch>
-				<Route path="/" component={Login} />
-			</Switch>
+			<AuthProvider>
+				<Switch>
+					<Route path="/chats" component={Chats} />
+					<Route path="/" component={Login} />
+				</Switch>
+			</AuthProvider>
 		</Router>
 	</div>
 	);

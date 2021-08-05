@@ -10,7 +10,7 @@ export default function Login() {
 		<div>
 			<div id="login-page">
 				<div id="login-card">
-					<h2 style={{ color: 'white' }}>Welcome to Me&You</h2>
+					<h2 style={{ color: 'white' }}>Welcome to M/Y</h2>
 
 					<div 
 							className="login-button google"
